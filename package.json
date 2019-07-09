@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Modern CSS Architecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoseinMansouri/Natours.git"
+  },
+  "keywords": [
+    "CSS",
+    "ModernArchitecture"
+  ],
+  "author": "Hoserin Mansouri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HoseinMansouri/Natours/issues"
+  },
+  "homepage": "https://github.com/HoseinMansouri/Natours#readme"
+}
