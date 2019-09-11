@@ -26,6 +26,12 @@
             &--1{            
                 background-image: linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark);                              
             }
+            &--2{            
+                background-image: linear-gradient(to right bottom,$color-primary-light,$color-primary-dark);                              
+            }
+            &--3{            
+                background-image: linear-gradient(to right bottom,$color-tertiary-light,$color-tertiary-dark);                              
+            }
         }       
     }
     &:hover &__side--front{
@@ -36,20 +42,24 @@
         transform: rotateY(0deg);
     }
 
+    //Front Side Styling
     &__picutre{ 
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;        
         clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
-        -webkit-clip-path: polygon(0 0,100% 0,100% 85%,0 100%);        
+        -webkit-clip-path: polygon(0 0,100% 0,100% 85%,0 100%);    
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
         &--1{
             background-image: linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark), url(../img/nat-5.jpg);           
         }
         &--2{
-            //background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom,$color-primary-light,$color-primary-dark), url(../img/nat-6.jpg);  
         }
         &--3{
-           // background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom,$color-tertiary-light,$color-tertiary-dark), url(../img/nat-7.jpg);  
         }
     }
 
@@ -74,6 +84,14 @@
             background-image: linear-gradient(to right bottom
             ,rgba($color-secondary-light,.85),rgba($color-secondary-dark,.85));
         }
+        &--2{
+            background-image: linear-gradient(to right bottom
+            ,rgba($color-primary-light,.85),rgba($color-primary-dark,.85));
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom
+            ,rgba($color-tertiary-light,.85),rgba($color-tertiary-dark,.85));
+        }
     }
 
     &__details{
@@ -94,5 +112,35 @@
                 }
             }
         }
+    }
+
+    //Back Side Styling
+    &__cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;        
+        width: 90%; 
+        margin: 0;       
+    }
+
+    &__price-box{        
+        margin-bottom: 5rem;
+        text-align: center;        
+        color: $color-white;
+        font-weight: 100;
+    }
+
+    &__price-only{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    &__price-value{
+        font-size: 5rem;
+        font-weight: 100;
+        margin: 0;
     }
 }
