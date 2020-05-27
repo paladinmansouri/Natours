@@ -8,12 +8,15 @@
 @import "base/typegraphy";
 @import "base/utilities";
 //component
+@import "components/bg-video";        
 @import "components/button"; 
 @import "components/card";   
 @import "components/composition";
-@import "components/feature-box";
+@import "components/feature-box";     
+@import "components/form";    
+@import "components/story";
 //layout 
 @import "layout/grid";  
-@import "layout/header";         
+@import "layout/header";            
 //page
-@import "pages/home";     
+@import "pages/home";                        
